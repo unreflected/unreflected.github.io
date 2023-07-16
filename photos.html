@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>snapshoot</title>
+
+	<link rel="stylesheet" type="text/css" href="ghubstyle.css">
+	<link rel="stylesheet" href="https://unpkg.com/7.css">
+
+
+			<script>
+		function myFunction(imgs) {
+		  var expandImg = document.getElementById("expandedImg");
+		  var imgText = document.getElementById("imgtext");
+		  expandImg.src = imgs.src;
+		  imgText.innerHTML = imgs.alt;
+		  expandImg.parentElement.style.display = "block";
+		}
+		</script>
+
+	<style>
+		body {
+			background-image: url("lake2.jpg");	
+			background-size: 100%;
+		}
+
+		  .violet::before,
+		  .violet > .title-bar {
+		    background-color: pink;
+		  }
+	</style>
+</head>
+<body>
+
+	<div class="header">
+		<a href="index.html">go back</a>
+	</div>
+	<div class="enclose">
+	<div class="window violet active" style="width: 200px; font-family: ms gothic;">
+  <div class="title-bar">
+    <div class="title-bar-text" style="font-family: ms gothic;"><strong>gallery</strong></div>
+    <div class="title-bar-controls">
+    <button aria-label="Minimize"></button>
+     <button aria-label="Maximize"></button>
+     <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <center><p>click to enlarge</p></center>
+    <div class="test" >
+  <div class="column">
+    <img src="100_1163.jpg" alt="backyard !!"  onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="100_1167.jpg" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="100_1199.jpg" alt="idk what this flower is called" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="100_1218.jpg" alt="kape ta woah"  onclick="myFunction(this);">
+  </div>
+</div>
+</div>
+</div>
+
+<div class="window violet active" style="width: 410px; margin-left: 18%; margin-top: -13%; font-family: ms gothic;">
+  <div class="title-bar">
+    <div class="title-bar-text" style="font-family: ms gothic;"><strong>woah!</strong></div>
+    <div class="title-bar-controls">
+    <button aria-label="Minimize"></button>
+     <button aria-label="Maximize"></button>
+     <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    				<div class="enlarged">
+					  <img id="expandedImg" style="width:100%">
+					  <div id="imgtext"></div>
+					</div>
+					  </div>
+					</div>
+  </div>
+</div>
+</body>
+</html>
