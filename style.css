@@ -5,6 +5,11 @@
 
 @font-face { font-family: pc98; src: url('https://dl.dropbox.com/s/2gb4hu4x89z5jt9/pc-9800.ttf'); }
 
+@font-face {
+font-family: star7;
+src: url(https://dl.dropbox.com/s/3rb56690ddj8dka/STAR7.otf);
+}
+
 body {
 	font-family: pc98;
 }
@@ -78,63 +83,131 @@ textarea {
 
 /* PHOTO LOG */
 
-.header {
-	background-color: white;
-	border: 2px ridge lightgray;
-	width: 50px;
-	padding: 5px;
-}
 
-.enclose {
-	width: 500px;
-	height: 240px;
+.all {
 	margin: 0 auto;
-	margin-top: 4%;
+	width: 640px;
+	height: 99%;
 }
 
+.flix {
+	margin: auto;
+	width: 635px;
+	display: grid;
+	grid-template-columns: 25% 70%;
+	gap: 0 1%;
+}
 
-.test {
-	height: 150px;
+.tside {
+	width: 145px;
+	height: 190px;
+	background: whitesmoke;
+	box-shadow: 0 0 3px 3px whitesmoke;
+	margin: 5px;
+	margin-top: 20px;
+	padding: 6px;
+	font-family: pc98;
+}
+
+.pics {
+	width: 465px;
+	height: 95vh;
+	margin: 5px;
+	padding: 6px;
 	overflow-y: scroll;
 }
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
-	 width: 100%;
+.pics img {
+	width: 99%;
+	margin-bottom: 10px;
+	box-shadow:0 0 3px 3px white;
+	transition: .5s ease-out;
 }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: crosshair; 
-  width: 100%;
-  transition: 0.5s ease;
+.pics img:hover {
+	box-shadow: 0 0 3px 3px blue;
 }
 
-.column img:hover {
-  opacity: 1;
+.pics img:click {
+	box-shadow: 0 0 3px 3px blue;
 }
 
-/* The expanding image container */
-.enlarged {
-  position: relative;
-  display: none;
-  width: 100%;
+/* MUSIC PAGE */
+
+.wrapp {
+	width: 98%;
+	height: 98%;
+	position: absolute;
 }
 
-/* Expanding image text */
-#imgtext {
+.tanan {
+	width: 560px;
+	height: 340px;
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
+ 	top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Closable button inside the expanded image */
-.Close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  cursor: pointer;
+.box {
+	width: 330px;
+	height: 330px;
+	margin: 5px auto;
+	border: 3px groove #8093A6;
+	border-radius: 7px;
+	background-color: #F2F2F2;
+	position: relative;
+	z-index: 5;
+	font-family: pc98;
+	color: #263A4E;
+	text-align: center;
+	overflow-y: scroll;
 }
+
+.rotate {
+ -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.inside {
+	width: 320px;
+	height: 230px;
+	border: 1px solid black;
+	margin: 5px auto;
+}
+
+.leftfl {
+float: left; text-align: left; margin: 8px;
+}
+
+.rightfl {
+	float: right; text-align: right; margin: 8px;
+}
+
+/* PROFILE */
+
+.conta {
+	width: 400px;
+	height: 570px;
+	position: absolute;
+ 	top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* ENTERTAINMENT */
+
+.hold {
+	width: 740px;
+	height: 560px;
+	position: absolute;
+ 	top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
