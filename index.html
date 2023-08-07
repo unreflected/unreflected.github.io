@@ -18,16 +18,13 @@
 
 </head>
 <body>
-	<!-- SCM Music Player https://www.scmplayer.net -->
-<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
-data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffle':false,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Unreflected - Mazzy Star','url':'https://www.youtube.com/watch?v=bCOMpii4r9U'}]}" ></script>
-<!-- SCM Music Player script end -->
 
 	<div class="container">
 		<div class="left">
 			<img src="picnic.gif" width="60%">
 			<p><mark> changelog </mark></p>
 			<div class="upda">
+				<b>0807</b> - 2 new pages: music and entertainment page. new, simpler photo page layout, i like it more now ^^ changed index buttons to a dropdown
 				<b>0716</b> - made home page and photo log. dont really like the photo log layout though lol<br><br>
 				<b>0715</b> - site created yippee!!
 			</div>
@@ -38,7 +35,14 @@ data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':false,'shuffl
 					<p style="line-height: 5px; color: lightgrey;">just for fun</p>
 				<img src="osaka.gif" width="160px" height="110px">
 					<br><br>
-				<a href="photos.html"><button>photo log</button></a> <button>inventory</button> 
+				<div style="text-align: center;">
+					<select onchange='location=this.options[this.selectedIndex].value;' style='width:110px;font-size:.9em;background:#EAEAEA;padding:3px;border:2px ridge lightgray;border-radius: 5px;color: #000;margin-top: 0px; font-family: pc98;'>
+					<option value="#">directory</option>
+					<option value="photos.html">photos</option>
+					<option value="ent.html">entertainment</option>
+					<option value="mmusic.html">music</option>
+					</select>
+					</div>
 				<br><br>
 				<img src="divcat.gif">
 			</div>
